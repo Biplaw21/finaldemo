@@ -1,0 +1,256 @@
+/* Reset styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+  
+.custom-navbar {
+    background-color: #9ad3ff !important;
+    width: 100%; /* Ensure navbar fits the width of the viewport */
+    z-index: 5 !important;
+  }
+  ul .dropdown-menu {
+    background-color: #9ad3ff !important;
+}
+
+ul .dropdown-menu li:hover {
+    background-color: white;
+}
+ul .dropdown-menu li:hover {
+    background-color: white;
+}
+
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: wheat;
+}
+
+/* Container Styles */
+.container {
+    width: 100%;
+    max-width: 1200px; /* Add a max-width for better responsiveness */
+    margin: 0 auto; /* Center the container */
+
+}
+
+/* Login Container Styles */
+.container-login {
+    width: 100%;
+    max-width: 600px; /* Set a max-width for better responsiveness */
+    box-shadow: 7px 7px  7px 5px rgba(0, 0, 0, 0.3);
+    margin: 90px auto; /* Center the login container */
+    margin-bottom: 35px !important;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 8px;
+    
+}
+
+/* Header Styles */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    padding: 10px 15px; /* Adjust padding for better appearance */
+    background-color: #007bff; /* Set a background color */
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: box-shadow 0.3s, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    background-color: #004494;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+}
+
+/* Form Group Link Styles */
+.form-group p {
+    text-align: center;
+}
+
+.form-group a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.form-group a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar Styles */
+.custom-navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+}
+
+.custom-navbar .navbar-brand img {
+    height: 55px;
+}
+
+.custom-navbar .nav-link {
+    color: #333;
+}
+
+.custom-navbar .nav-link.active {
+    color: #007bff;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #0056b3;
+}
+
+.custom-navbar .dropdown-menu {
+    background-color: #ffffff;
+}
+
+.custom-navbar .dropdown-item:hover {
+    background-color: #f8f9fa;
+}
+
+.custom-navbar .form-control {
+    border-radius: 0;
+}
+
+.custom-navbar .btn-outline-success {
+    border-color: #007bff;
+    color: #007bff;
+}
+
+.custom-navbar .btn-outline-success:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* Footer Styles */
+.footer {
+
+    display: fixed;
+    
+    background-color: #f8f9fa;
+
+    padding: 20px;
+    margin-top: 20px;
+
+}
+
+.footer-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    width: 100px;
+}
+
+.footer-logo p {
+    margin: 10px 0 0;
+    color: #00bf63;
+    font-weight: bold;
+
+}
+
+.footer-contact {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.footer-links {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-links h5 {
+    margin-bottom: 10px;
+   
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 5px;
+}
+
+.footer-links ul li a {
+   
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.footer-social a {
+  
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.footer-social a:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container-login, .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .container-login, .container {
+        width: 95%;
+    }
+}

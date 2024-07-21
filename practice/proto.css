@@ -1,0 +1,302 @@
+body {
+    overflow-x: hidden;
+    padding: 10px;
+    background-image: url('nurse-holding-senior-man-s-hands-sympathy.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.custom-navbar {
+    background-color: #9ad3ff; 
+    z-index: 5 !important;
+}
+
+/* home hero section css */
+.background-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-col1 {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+.carousel-inner img {
+    height: 100%;
+    object-fit: cover;
+}
+/* home hero section css ends */
+
+.custom-certified {
+    border: 1px solid grey;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(197, 197, 197);
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    color: grey;
+    margin-left: 4px;
+}
+.custom-text {
+    font-size: 50px;
+    font-weight: bolder;
+    line-height: 50px;
+}
+
+.custom-button-1, .custom-button-2 {
+    background: linear-gradient(135deg, #00bf63, #008f4e);
+    border: none;
+    border-radius: 18px;
+    color: white;
+    padding-left: 2rem; /* Reduced padding */
+    padding-right: 2rem; /* Reduced padding */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.2rem; /* Adjusted font size */
+    margin: 0.5rem; /* Added margin for spacing */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.custom-button-1:hover, .custom-button-2:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(135deg, #008f4e, #00bf63); /* Slightly reversed gradient on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.button-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .button-col {
+        flex-direction: column;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.custom-button-1:hover, .custom-button-2:hover {
+    animation: pulse 1s infinite;
+}
+
+.checked {
+    color: orange;
+}
+
+/* .custom-img {
+    width: 285px;
+    height: 286px;
+} */
+
+.custom-card {
+    text-align: center;
+    padding-left: 4rem;
+}
+
+ul .dropdown-menu {
+    background-color: #9ad3ff;
+}
+
+ul .dropdown-menu li:hover {
+    background-color: white;
+}
+
+/* Card styles */
+.card {
+    background: linear-gradient(135deg, #f8f9fa, #e3f2fd); /* Subtle gradient for cards */
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb); /* Lighter gradient on hover */
+}
+
+/* Smaller card sizes */
+.card .card-body img {
+    height: 50px;
+    width: 50px;
+}
+
+.card .card-body p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #4b4b4b;
+}
+
+/* Specific colors for each card */
+.card:nth-child(1) .card-body {
+    background-color: #e3f2fd;
+    color: #0d47a1;
+}
+
+.card:nth-child(2) .card-body {
+    background-color: #e8f5e9;
+    color: #1b5e20;
+}
+
+.card:nth-child(3) .card-body {
+    background-color: #fff3e0;
+    color: #ef6c00;
+}
+
+/* Adding some animation */
+.card .card-body {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.card:hover .card-body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Ensuring the cards are smaller */
+.card {
+    max-width: 15rem;
+    margin: 1rem auto;
+}
+/* Enhanced Button Styling for Carousel */
+.btn-carousel {
+    background-color: #00d0ffa7 !important; /* Solid blue background color */
+    color: #ffffff; /* White text for high contrast */
+    border: 2px solid #007bff; /* Border color matches button background */
+    border-radius: 30px;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Enhanced shadow for prominence */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Text shadow for better legibility */
+  }
+  
+  .btn-carousel:hover {
+    background-color: #0056b3; /* Darker blue shade on hover */
+    border-color: #0056b3; /* Match border color with background on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Stronger shadow on hover */
+  }
+  
+  /* Improved Carousel Caption Styling */
+  .carousel-caption {
+    bottom: 30px;
+    text-align: center;
+    position: relative;
+    color: #ffffff; /* White text for visibility */
+  }
+  
+  .carousel-caption::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Dark overlay for better contrast */
+    z-index: -1; /* Place overlay behind text */
+  }
+  
+  .carousel-caption p {
+    margin-top: 10px;
+    font-size: 18px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Text shadow for better legibility */
+  }
+  .footer {
+    background-color: #f8f9fa;
+    padding: 20px 0; /* Reduced padding */
+    font-size: 14px; /* Reduced font size */
+  }
+  .footer .footer-logo {
+    font-size: 20px; /* Reduced font size */
+    font-weight: bold;
+    color: #28a745;
+  }
+  .footer .footer-logo span {
+    color: #007bff;
+  }
+  .footer .footer-logo p {
+    margin: 0;
+  }
+  .footer .footer-contact p {
+    margin: 5px 0;
+    font-size: 12px; /* Reduced font size */
+    color: #333;
+  }
+  .footer .footer-links h5 {
+    font-size: 16px; /* Reduced font size */
+    font-weight: bold;
+    margin-bottom: 10px; /* Reduced margin */
+    color: #333;
+  }
+  .footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer .footer-links ul li {
+    margin-bottom: 5px; /* Reduced margin */
+  }
+  .footer .footer-links ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 12px; /* Reduced font size */
+  }
+  .footer .footer-links ul li a:hover {
+    text-decoration: underline;
+  }
+  .footer .footer-social {
+    margin-top: 10px; /* Reduced margin */
+  }
+  .footer .footer-social a {
+    color: #333;
+    margin-right: 10px;
+    font-size: 16px; /* Reduced font size */
+    text-decoration: none;
+  }
+  .footer .footer-social a:hover {
+    color: #007bff;
+  }
+  .footer .footer-bottom {
+    margin-top: 10px; /* Reduced margin */
+    font-size: 12px; /* Reduced font size */
+    color: #333;
+    text-align: center;
+  }
+  @media (max-width: 767.98px) {
+    .footer .footer-contact, .footer .footer-links {
+      text-align: center;
+    }
+    .footer .footer-social {
+      text-align: center;
+    }
+  }

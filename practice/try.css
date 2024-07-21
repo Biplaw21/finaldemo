@@ -1,0 +1,394 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box; /* Ensure padding and border are included in width/height calculations */
+}
+html{
+  scroll-behavior: smooth;
+}
+
+.BG {
+  display: flex;
+  background-image: url('renamed.png'); /* Replace with your image path */
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  background-attachment: fixed; /* Fix the background image during scroll */
+ /* Ensure the body covers the full viewport height */
+}
+.suggestions-container {
+  display: none; /* Initially hidden */
+  position: absolute; /* Positioned relative to parent */
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  max-height: 200px;
+  overflow-y: auto; /* Scroll if needed */
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+.suggestion-item {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}
+
+
+.custom-navbar {
+  background-color: #9ad3ff;
+  width: 100%; /* Ensure navbar fits the width of the viewport */
+  z-index: 5 !important;
+}
+ .suggestions-container {
+      z-index: 1000;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+
+    .suggestion-item {
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .suggestion-item:hover {
+      background-color: #f1f1f1;
+    }
+
+    .custom-navbar {
+        background-color: #9ad3ff !important;
+    }
+
+    .custom-button-1, .custom-button-2 {
+      margin: 10px;
+    }
+
+    .custom-query {
+      background-color: #f8f9fa;
+    }
+
+    .carousel-inner img {
+      height: 400px;
+      object-fit: cover;
+    }
+
+.background-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-col1 {
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 auto; /* Center the container */
+  width: 100%; /* Ensure container takes full width */
+}
+
+.carousel-inner img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.custom-certified {
+  border: none;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  color: green;
+  padding: 3px;
+  margin-left: 4px;
+}
+
+.custom-text  {
+  font-size: 70px;
+  font-weight: bolder;
+  line-height: 70px;
+  color: rgb(57, 41, 41);
+  text-align: left;
+
+  
+ 
+  
+}
+
+.custom-button-1, .custom-button-2 {
+  background: linear-gradient(135deg, #00bf63, #008f4e);
+  display: flex;
+  border: none;
+  
+  border-radius: 18px;
+  color: white;
+  padding: 10px 2rem; /* Unified padding */
+  font-size: 1.2rem;
+  margin: 0.5rem;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.custom-button-1:hover, .custom-button-2:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(135deg, #008f4e, #00bf63); /* Slightly reversed gradient on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  animation: pulse 1s infinite;
+}
+
+.button-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ensure button column fits full width */
+}
+
+@media only screen and (max-width: 600px) {
+  .button-col {
+    flex-direction: column;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.checked {
+  color: orange;
+}
+
+.custom-card {
+  text-align: center;
+  padding-left: 4rem;
+  width: 100%; /* Ensure card container takes full width */
+}
+
+ul .dropdown-menu {
+  background-color: #9ad3ff;
+}
+
+ul .dropdown-menu li:hover {
+  background-color: white;
+}
+
+/* Card styles */
+.card {
+  background: linear-gradient(135deg, #f8f9fa, #e3f2fd); /* Subtle gradient for cards */
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  width: 100%; /* Ensure cards fit the container width */
+  max-width: 15rem; /* Maintain card size */
+  margin: 1rem auto; /* Center the card and add spacing */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb); /* Lighter gradient on hover */
+  cursor: pointer;
+}
+
+.card .card-body img {
+  height: 50px;
+  width: 50px;
+}
+
+.card .card-body p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #4b4b4b;
+}
+
+
+/* Specific colors for each card */
+.card:nth-child(1) .card-body {
+  background-color: #e3f2fd;
+  color: #0d47a1;
+}
+
+.card:nth-child(2) .card-body {
+  background-color: #e8f5e9;
+  color: #1b5e20;
+}
+
+.card:nth-child(3) .card-body {
+  background-color: #fff3e0;
+  color: #ef6c00;
+}
+
+.card .card-body {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.card:hover .card-body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Enhanced Button Styling for Carousel */
+.btn-carousel {
+  background-color: #00d0ffa7 !important; /* Solid blue background color */
+  color: #ffffff; /* White text for high contrast */
+  border: 2px solid #007bff; /* Border color matches button background */
+  border-radius: 30px;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Enhanced shadow for prominence */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Text shadow for better legibility */
+}
+
+.btn-carousel:hover {
+  background-color: #0056b3; /* Darker blue shade on hover */
+  border-color: #0056b3; /* Match border color with background on hover */
+  transform: scale(1.05); /* Slightly larger on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Stronger shadow on hover */
+}
+
+/* Improved Carousel Caption Styling */
+.carousel-caption {
+  bottom: 30px;
+  text-align: center;
+  position: relative;
+  color: #ffffff; /* White text for visibility */
+}
+
+.carousel-caption::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Dark overlay for better contrast */
+  z-index: -1; /* Place overlay behind text */
+}
+
+.carousel-caption p {
+  margin-top: 10px;
+  font-size: 18px;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Text shadow for better legibility */
+}
+
+/* Footer Styles */
+.footer {
+
+  display: fixed;
+  
+  background-color: #f8f9fa;
+
+  padding: 20px;
+  margin-top: 5px;
+
+}
+
+.footer-logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer-logo img {
+  width: 100px;
+}
+
+.footer-logo p {
+  margin: 10px 0 0;
+  color: #00bf63;
+  font-weight: bold;
+
+}
+
+.footer-contact {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+}
+
+.footer-links {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer-links h5 {
+  margin-bottom: 10px;
+ 
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 5px;
+}
+
+.footer-links ul li a {
+ 
+  text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-social {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.footer-social a {
+
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.footer-social a:hover {
+  color: #007bff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container-login, .container {
+      width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .container-login, .container {
+      width: 95%;
+  }
+}
+
